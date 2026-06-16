@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --color-paper: #f6f3ec;
+  --color-ink: #27241f;
+  --color-pine: #1f4d43;
+  --color-pine-light: #2f6e60;
+  --color-clay: #d9764a;
+  --color-line: #e2dccf;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+/* Subtle "thinking" pulse for the assistant indicator */
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+.pulse-soft {
+  animation: pulse-soft 1.4s ease-in-out infinite;
+}
