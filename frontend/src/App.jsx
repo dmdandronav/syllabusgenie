@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
-const APP_NAME = "Field Notes"; // <- rename for your project
-const TAGLINE = "An AI companion that helps you think through it.";
+const APP_NAME = "SyllabusGenie";
+const TAGLINE = "Ask your class, not the internet.";
 
 export default function App() {
   const [messages, setMessages] = useState([

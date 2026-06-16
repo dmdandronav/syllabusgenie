@@ -1,28 +1,13 @@
 @import "tailwindcss";
 
 @theme {
+  --color-surface: oklch(97% 0.01 145);
+  --color-ink: oklch(18% 0.02 145);
+  --color-accent: oklch(52% 0.18 145);
+  --color-muted: oklch(90% 0.03 145);
+  --color-line: oklch(85% 0.02 145);
+  --font-sans: "Inter", sans-serif;
   --font-display: "Fraunces", serif;
-  --font-body: "Inter", system-ui, sans-serif;
-
-  --color-paper: #f6f3ec;
-  --color-ink: #27241f;
-  --color-pine: #1f4d43;
-  --color-pine-light: #2f6e60;
-  --color-clay: #d9764a;
-  --color-line: #e2dccf;
 }
 
-body {
-  font-family: var(--font-body);
-  background-color: var(--color-paper);
-  color: var(--color-ink);
-}
-
-/* Subtle "thinking" pulse for the assistant indicator */
-@keyframes pulse-soft {
-  0%, 100% { opacity: 0.35; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.15); }
-}
-.pulse-soft {
-  animation: pulse-soft 1.4s ease-in-out infinite;
-}
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500&display=swap");
